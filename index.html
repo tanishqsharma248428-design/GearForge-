@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d0f0c" />
+  <meta name="description" content="GearForge — high-performance gaming & workspace gear for your battlestation. Discover mice, mechanical keyboards, studio audio, mousepads and desk accessories." />
+  <title>GearForge — Gear Up. Play Better.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient-cursor" id="ambientCursor" aria-hidden="true"></div>
+
+  <div class="announcement">
+    <span class="pulse"></span>
+    <span>LEVEL UP YOUR SETUP</span>
+    <span class="announce-sep">/</span>
+    <span>FREE EXPRESS SHIPPING ON ORDERS OVER ₹1,999</span>
+    <span class="announce-sep hide-sm">/</span>
+    <span class="hide-sm">USE CODE <b>FORGE10</b> FOR 10% OFF</span>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="GearForge home">
+      <span class="brand-mark">G<span>+</span></span>
+      <span>GEAR<span class="brand-light">FORGE</span></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#shop">Shop all</a>
+      <a href="#ordersHub">Order History</a>
+      <a href="#personalizedForYou">AI For You ✦</a>
+      <a href="#categories">Categories</a>
+      <a href="#reviews">Reviews</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search products" title="Search gear (/)">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      </button>
+
+      <button class="icon-btn wishlist-header-btn" id="wishlistToggle" aria-label="Saved wishlist" title="Saved gear">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+        <span class="badge-dot" id="wishlistCount" hidden>0</span>
+      </button>
+
+      <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Switch theme" title="Switch theme">☼</button>
+
+      <button class="auth-btn" id="authToggle" aria-label="Sign in or manage account">
+        <span class="auth-avatar" id="authAvatar">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </span>
+        <span class="auth-label" id="authLabel">Sign In</span>
+      </button>
+
+      <button class="cart-btn" id="cartToggle" aria-label="Open shopping cart">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-btn-text">Bag</span>
+        <span class="cart-count-pill" id="cartCount">0</span>
+      </button>
+
+      <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <div class="search-bar" id="searchBar">
+    <div class="search-input-wrap">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="searchInput" type="search" placeholder="Search mice, hot-swap keyboards, studio mics, XL desk mats…" aria-label="Search products">
+    </div>
+    <button id="clearSearch" type="button">Clear</button>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> THE NEXT LEVEL STARTS HERE · SERIES 04</div>
+        <h1>YOUR SETUP.<br><span>YOUR RULES.</span></h1>
+        <p>Pro-grade gaming &amp; workspace hardware engineered for speed, acoustics, and pure desk aesthetics. Every millisecond and every detail counts.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#shop">Explore the gear <span>↗</span></a>
+          <button class="btn btn-glass" id="heroJoinBtn" type="button">Join Forge Club <span>＋</span></button>
+          <a class="text-link" href="#categories">Browse loadouts <span>→</span></a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>40<span>+</span></strong><small>Curated essentials</small></div>
+          <div><strong>4.8<span>/5</span></strong><small>Verified player rating</small></div>
+          <div><strong>2<span>yr</span></strong><small>ForgeCare warranty</small></div>
+          <div><strong>24<span>h</span></strong><small>Express dispatch</small></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-glow"></div>
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+        <div class="hero-card-stage">
+          <img class="hero-product" src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=1200&q=85" alt="Phantom Pro Wireless Gaming Mouse on dark desk" />
+          <div class="hero-spotlight-tag">
+            <span class="tag-pill">FEATURED DROP</span>
+            <strong>Phantom Pro 4K Wireless</strong>
+            <span>₹1,899 · 54g Ultra-Light</span>
+            <button type="button" class="hero-quick-buy" data-hero-add="2">Add to Bag ＋</button>
+          </div>
+        </div>
+        <div class="hero-float float-top">
+          <span class="float-dot"></span>
+          <div><b>PRECISION ENGINEERED</b><small>Optical switches · 0.2ms response</small></div>
+        </div>
+        <div class="hero-float float-bottom">
+          <span class="mini-spark">✳</span>
+          <div><b>BUILT FOR YOUR FLOW</b><small>Seamless work-to-play acoustics</small></div>
+        </div>
+        <div class="hero-index">GF // LABS 004</div>
+      </div>
+
+      <div class="hero-bottom">
+        <span>SCROLL TO EXPLORE</span>
+        <span class="scroll-line"></span>
+        <span>40 DISTINCT LOADOUT PIECES</span>
+        <span>01 — 04</span>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Store benefits">
+      <div class="ticker-track">
+        <span>PLAY WITHOUT LIMITS <i>✳</i></span>
+        <span>BUILT FOR THE GRIND <i>✳</i></span>
+        <span>YOUR DESK, REIMAGINED <i>✳</i></span>
+        <span>FREE SHIPPING OVER ₹1,999 <i>✳</i></span>
+        <span>7-DAY EASY REPLACEMENT <i>✳</i></span>
+        <span>PLAY WITHOUT LIMITS <i>✳</i></span>
+        <span>BUILT FOR THE GRIND <i>✳</i></span>
+        <span>YOUR DESK, REIMAGINED <i>✳</i></span>
+        <span>FREE SHIPPING OVER ₹1,999 <i>✳</i></span>
+        <span>7-DAY EASY REPLACEMENT <i>✳</i></span>
+      </div>
+    </section>
+
+    <section class="section categories-section" id="categories">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-line"></span> PICK YOUR LOADOUT</div>
+          <h2>SHOP BY <span>GEAR TYPE</span></h2>
+        </div>
+        <a class="text-link" href="#shop">View all 40 products <span>→</span></a>
+      </div>
+      <div class="category-grid">
+        <button class="category-card cat-mouse" data-category="Mice" type="button">
+          <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=800&q=80" alt="Wireless gaming mouse">
+          <span class="cat-number">01 / CONTROL · 6 MODELS</span>
+          <span class="cat-title">Mice <i>↗</i></span>
+          <span class="cat-desc">Featherweight shells. Flawless sensors.</span>
+        </button>
+        <button class="category-card cat-keyboard" data-category="Keyboards" type="button">
+          <img src="https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=800&q=80" alt="Custom mechanical keyboard">
+          <span class="cat-number">02 / INPUT · 6 MODELS</span>
+          <span class="cat-title">Keyboards <i>↗</i></span>
+          <span class="cat-desc">Gasket mount feel. Hot-swap freedom.</span>
+        </button>
+        <button class="category-card cat-audio" data-category="Audio" type="button">
+          <img src="https://images.unsplash.com/photo-1599669454699-248893623440?auto=format&fit=crop&w=800&q=80" alt="Studio gaming headphones">
+          <span class="cat-number">03 / AUDIO · 6 MODELS</span>
+          <span class="cat-title">Audio <i>↗</i></span>
+          <span class="cat-desc">Pinpoint spatial cues &amp; studio mics.</span>
+        </button>
+        <button class="category-card cat-desk" data-category="Desk Accessories" type="button">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Organized workstation">
+          <span class="cat-number">04 / WORKSPACE · 6 MODELS</span>
+          <span class="cat-title">Desk Gear <i>↗</i></span>
+          <span class="cat-desc">Lighting, ergonomics &amp; clean routing.</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section shop-section" id="shop">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-line"></span> CURATED FOR YOUR EVERYDAY</div>
+          <h2>THE GEAR <span>DROP</span></h2>
+        </div>
+        <div class="shop-controls">
+          <div class="search-inline">
+            <input type="search" id="inlineSearchInput" placeholder="Quick filter gear…" aria-label="Quick filter gear">
+          </div>
+          <label class="sr-only" for="sortSelect">Sort products</label>
+          <select id="sortSelect">
+            <option value="featured">Sort: Featured</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="rating">Top Rated First</option>
+            <option value="discount">Biggest Discount</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="filter-row" id="filterRow" role="tablist" aria-label="Product categories">
+        <button class="filter-chip active" data-filter="All" type="button">All gear <span>40</span></button>
+        <button class="filter-chip" data-filter="Mice" type="button">Mice <span>6</span></button>
+        <button class="filter-chip" data-filter="Keyboards" type="button">Keyboards <span>6</span></button>
+        <button class="filter-chip" data-filter="Mousepads" type="button">Mousepads <span>6</span></button>
+        <button class="filter-chip" data-filter="Audio" type="button">Audio <span>6</span></button>
+        <button class="filter-chip" data-filter="Stands" type="button">Stands <span>6</span></button>
+        <button class="filter-chip" data-filter="Desk Accessories" type="button">Desk accessories <span>6</span></button>
+        <button class="filter-chip" data-filter="Cables & Extras" type="button">Cables &amp; extras <span>4</span></button>
+        <button class="filter-chip wishlist-chip" data-filter="Wishlist" type="button">♥ Saved <span id="wishlistFilterCount">0</span></button>
+      </div>
+
+      <div class="results-line">
+        <span id="resultsCount">Showing 12 of 40 products</span>
+        <span class="results-hint">CLICK ANY CARD TO INSPECT SPECS · DIRECT ADD &amp; QUANTITY CONTROLS ENABLED <b>↗</b></span>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+
+      <div class="load-more-wrap">
+        <button class="btn btn-outline" id="loadMore" type="button">Load more gear <span>＋</span></button>
+        <button class="btn btn-ghost" id="showAllBtn" type="button">Show all 40 items</button>
+      </div>
+    </section>
+
+    <!-- IMPROVISED RECENT ORDER / PURCHASE HISTORY SECTION -->
+    <section class="section orders-hub-section" id="ordersHub">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-line"></span> VERIFIED DISPATCH &amp; LOADOUT LOG</div>
+          <h2>RECENT ORDERS &amp; <span>PURCHASE HISTORY</span></h2>
+        </div>
+        <div class="orders-hub-actions">
+          <button class="btn btn-outline" id="simulateSampleOrderBtn" type="button" title="Add a sample multi-item order to test purchase history &amp; AI recommendations">
+            ⚡ Simulate Sample Purchase
+          </button>
+          <button class="btn btn-primary" id="openProfileOrdersBtn" type="button">
+            Account Order Vault <span>↗</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Order Summary KPIs -->
+      <div class="orders-kpi-grid" id="ordersKpiGrid">
+        <div class="order-kpi-card">
+          <span class="kpi-label">TOTAL ORDERS</span>
+          <strong id="kpiTotalOrders">0</strong>
+          <small>Verified ForgePay dispatches</small>
+        </div>
+        <div class="order-kpi-card">
+          <span class="kpi-label">GEAR PURCHASED</span>
+          <strong id="kpiTotalItems">0</strong>
+          <small>Units in your arsenal</small>
+        </div>
+        <div class="order-kpi-card">
+          <span class="kpi-label">LOADOUT VALUE</span>
+          <strong id="kpiTotalSpent">₹0</strong>
+          <small>Lifetime hardware investment</small>
+        </div>
+        <div class="order-kpi-card">
+          <span class="kpi-label">FORGECARE COVERAGE</span>
+          <strong id="kpiWarrantyStatus">Active · 2 Yrs</strong>
+          <small>Instant doorstep swap protection</small>
+        </div>
+      </div>
+
+      <!-- Rich Itemized Order History Feed -->
+      <div class="orders-feed-list" id="ordersHubFeed"></div>
+    </section>
+
+    <!-- SEPARATE SECTION: PERSONALIZED PRODUCT SUGGESTIONS (PURCHASE HISTORY + AI CHATBOT MEMORY) -->
+    <section class="section personalized-ai-section" id="personalizedForYou">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-line"></span> NEURAL RECOMMENDATION ENGINE · LIVE SYNC</div>
+          <h2>SUGGESTED FOR YOU <span>BY PURCHASE &amp; AI CHAT</span></h2>
+        </div>
+        <p class="heading-note">
+          Dynamically curated using your <b>past purchase history</b> (ecosystem complements) and your <b>personal interests recorded by ForgeBot AI</b> during text or voice conversations.
+        </p>
+      </div>
+
+      <!-- Live Customer Interest & Purchase DNA Telemetry Bar -->
+      <div class="ai-dna-dashboard" id="aiDnaDashboard">
+        <div class="ai-dna-top">
+          <div class="ai-dna-title-wrap">
+            <span class="ai-dna-pulse"></span>
+            <div>
+              <strong>Live Customer Interest &amp; Purchase DNA</strong>
+              <small id="aiDnaSubtitle">Synced in real time with ForgeBot AI conversations &amp; your completed orders</small>
+            </div>
+          </div>
+          <div class="ai-dna-quick-actions">
+            <button type="button" class="dna-sim-btn" data-sim-interest="valorant_fps" title="Simulate chatting with ForgeBot about Valorant &amp; Claw Mice">
+              🎯 Sync: Valorant + Claw Mouse
+            </button>
+            <button type="button" class="dna-sim-btn" data-sim-interest="coding_setup" title="Simulate chatting with ForgeBot about Coding &amp; Quiet Keyboards">
+              💻 Sync: Coding + Acoustic Desk
+            </button>
+            <button type="button" class="dna-sim-btn" data-sim-interest="apex_speed" title="Simulate chatting with ForgeBot about Apex Legends &amp; Speed Pads">
+              ⚡ Sync: Apex + Speed Glide
+            </button>
+            <button type="button" class="dna-chat-btn" id="openBotFromSuggestionsBtn">
+              💬 Talk to ForgeBot AI
+            </button>
+          </div>
+        </div>
+
+        <div class="ai-dna-signals-row" id="aiDnaSignalsRow">
+          <!-- Populated dynamically with recorded Chatbot Interests + Purchased Categories -->
+        </div>
+      </div>
+
+      <!-- Filter Tabs for Recommendation Source -->
+      <div class="ai-rec-tabs" id="aiRecTabs" role="tablist" aria-label="Recommendation Source">
+        <button type="button" class="ai-rec-tab active" data-rec-source="all" role="tab" aria-selected="true">
+          ✨ All Smart Suggestions <span id="recCountAll">8</span>
+        </button>
+        <button type="button" class="ai-rec-tab" data-rec-source="chatbot" role="tab" aria-selected="false">
+          🤖 Recorded by ForgeBot AI Chat &amp; Voice <span id="recCountChat">4</span>
+        </button>
+        <button type="button" class="ai-rec-tab" data-rec-source="history" role="tab" aria-selected="false">
+          📦 Based on Purchase History (Setup Complements) <span id="recCountHistory">4</span>
+        </button>
+      </div>
+
+      <!-- Personalized Suggestions Product Grid -->
+      <div class="ai-suggestions-grid" id="aiSuggestionsGrid"></div>
+    </section>
+
+    <!-- DEDICATED ON-PAGE SECTION: FORGEBOT AI CHATBOT & LIVE VOICE CALL STUDIO -->
+    <section class="section ai-concierge-showcase" id="aiConciergeSection">
+      <div class="ai-studio-shell">
+        <div class="ai-studio-copy">
+          <div class="eyebrow">
+            <span class="eyebrow-line"></span> WHATSAPP AI CONCIERGE &amp; 2-WAY VOICE STUDIO
+          </div>
+          <h2>TALK OR TEXT.<br><span>MEET FORGEBOT AI.</span></h2>
+          <p class="ai-studio-lead">
+            Experience our neural hardware specialist engineered for GearForge. Ask about sensor physics, grip styles, or full battlestation builds via <b>WhatsApp-style Chat</b> or start a <b>hands-free Live AI Voice Call</b> with polite, natural speech.
+          </p>
+
+          <div class="ai-studio-badges">
+            <span class="studio-pill">🎙️ Single-Permission Continuous Mic</span>
+            <span class="studio-pill">🧠 All 40 Products + Esports Encyclopedia</span>
+            <span class="studio-pill">🎯 Cross-Questions by Game &amp; Grip</span>
+            <span class="studio-pill">🛡️ One-Time Consent Protected</span>
+          </div>
+
+          <div class="ai-studio-ctas">
+            <button type="button" class="btn-studio-voice" id="showcaseStartCallBtn">
+              <span class="call-live-dot"></span>
+              📞 Start Live AI Voice Call
+            </button>
+            <button type="button" class="btn-studio-chat" id="showcaseOpenChatBtn">
+              💬 Open WhatsApp AI Chat <span>↗</span>
+            </button>
+          </div>
+
+          <div class="ai-studio-try-grid">
+            <button type="button" class="studio-try-card" data-showcase-ask="What is the best gaming mouse under 3000 and why should I choose it?">
+              <span class="try-ico">🖱️</span>
+              <div>
+                <strong>“Best mouse under ₹3,000 &amp; why?”</strong>
+                <small>Tests budget filter + deep specs &amp; pros pitch</small>
+              </div>
+            </button>
+            <button type="button" class="studio-try-card" data-showcase-ask="What is a fingertip grip mouse vs claw grip?">
+              <span class="try-ico">🤏</span>
+              <div>
+                <strong>“What is a fingertip grip mouse?”</strong>
+                <small>Tests hardware biomechanics encyclopedia</small>
+              </div>
+            </button>
+            <button type="button" class="studio-try-card" data-showcase-ask="I play Valorant and CS2, which mousepad should I buy?">
+              <span class="try-ico">🎯</span>
+              <div>
+                <strong>“Valorant &amp; CS2 mousepad advice”</strong>
+                <small>Tests consultative low-sens arm-sweep logic</small>
+              </div>
+            </button>
+            <button type="button" class="studio-try-card" data-showcase-ask="Build me a complete pro gaming setup under ₹6,000">
+              <span class="try-ico">⚡</span>
+              <div>
+                <strong>“Build a complete setup under ₹6,000”</strong>
+                <small>Tests 1-click multi-item bundle architect</small>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive Visual Voice & Chat Preview Deck -->
+        <div class="ai-studio-visual">
+          <div class="studio-holo-card">
+            <div class="holo-top-bar">
+              <span class="holo-enc-badge">🔒 E2E ENCRYPTED · 48kHz NEURAL VOICE</span>
+              <span class="holo-live-tag"><span class="call-live-dot"></span> READY</span>
+            </div>
+
+            <div class="holo-orb-stage" id="showcaseCallTriggerOrb" role="button" tabindex="0" title="Click to launch Live AI Voice Call">
+              <span class="holo-ring hr1"></span>
+              <span class="holo-ring hr2"></span>
+              <span class="holo-ring hr3"></span>
+              <div class="holo-core">
+                <span>G<b>+</b></span>
+                <small>FORGEBOT</small>
+              </div>
+            </div>
+
+            <div class="holo-equalizer" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+
+            <div class="holo-dialogue-preview">
+              <div class="holo-bubble user-b">
+                <small>🎙️ CUSTOMER (VOICE CALL)</small>
+                “Which gaming mouse under ₹3,000 is best for Valorant, and why should I choose it?”
+              </div>
+              <div class="holo-bubble bot-b">
+                <small>🔊 FORGEBOT AI · POLITE VOICE CONCIERGE</small>
+                “For Valorant &amp; CS2 under ₹3,000, the <b>Pulse X Wireless (₹1,299)</b> is our #1 winner—featuring a 49g shell, zero-smoothing PAW3395 sensor, and 80-hour battery…”
+              </div>
+            </div>
+
+            <div class="holo-bottom-bar">
+              <span>🎙️ Instant Mic Mute / Interrupt Supported</span>
+              <button type="button" class="holo-call-pill" id="showcaseOrbCallBtn">Tap to Call Now →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-banner" id="featured">
+      <div class="feature-image">
+        <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=1400&q=85" alt="Minimal gaming workstation with computer setup">
+      </div>
+      <div class="feature-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> YOUR SPACE. UPGRADED.</div>
+        <h2>SMALL DETAILS.<br><span>BIG DIFFERENCE.</span></h2>
+        <p>From acoustic gasket-mounted keyboards to zero-drag braided paracords and water-repellent desk mats, build a battlestation that responds to every move.</p>
+        <div class="feature-perks">
+          <div><b>01</b><span>Custom tuned stabilizers &amp; switches</span></div>
+          <div><b>02</b><span>True 1000Hz–4000Hz wireless polling</span></div>
+          <div><b>03</b><span>Zero-hassle 7-day instant swap</span></div>
+        </div>
+        <a class="btn btn-primary" href="#shop">Find your upgrade <span>↗</span></a>
+        <div class="feature-tag">SETUP CULTURE // VOL. 04</div>
+      </div>
+    </section>
+
+    <section class="section reasons-section" id="setup">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-line"></span> THE GEARFORGE STANDARD</div>
+          <h2>GOOD GEAR. <span>NO GUESSWORK.</span></h2>
+        </div>
+        <p class="heading-note">Thoughtful essentials. Verified specs. A better desk starts with hardware tested by players and creators.</p>
+      </div>
+      <div class="reasons-grid">
+        <article>
+          <span class="reason-icon">✳</span>
+          <h3>Gear that makes sense</h3>
+          <p>Every item is hand-picked for build quality, sensor accuracy, and acoustic comfort across gaming and deep work.</p>
+          <span class="reason-num">01</span>
+        </article>
+        <article>
+          <span class="reason-icon">⌁</span>
+          <h3>Setup-friendly choices</h3>
+          <p>Filter by category, compare real specs in Quick View, and match your desk colorway without compatibility headaches.</p>
+          <span class="reason-num">02</span>
+        </article>
+        <article>
+          <span class="reason-icon">↗</span>
+          <h3>Member-first perks</h3>
+          <p>Create a free Forge account to save your wishlist, sync your shopping bag, and unlock member-only drop codes.</p>
+          <span class="reason-num">03</span>
+        </article>
+        <article>
+          <span class="reason-icon">◈</span>
+          <h3>Support that stays</h3>
+          <p>Backed by our 2-Year ForgeCare warranty, fast doorstep replacement, and responsive human tech support.</p>
+          <span class="reason-num">04</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reviews-section" id="reviews">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-line"></span> VERIFIED PLAYER FEEDBACK</div>
+          <h2>CUSTOMER <span>RATINGS &amp; REVIEWS</span></h2>
+        </div>
+        <button class="btn btn-primary" id="openWriteReviewBtn" type="button">Write a Review <span>★</span></button>
+      </div>
+
+      <div class="reviews-overview-card" id="reviewsOverviewCard">
+        <div class="ro-score-col">
+          <div class="ro-big-score" id="overallScoreVal">4.8</div>
+          <div class="ro-stars" id="overallStarsDisplay">★★★★★</div>
+          <div class="ro-total-text" id="overallCountText">Based on 128 verified reviews</div>
+          <span class="ro-recommend-pill">✓ 98% of players recommend GearForge</span>
+        </div>
+
+        <div class="ro-bars-col" id="overallBarsCol"></div>
+
+        <div class="ro-cta-col">
+          <h4>OWN GEARFORGE HARDWARE?</h4>
+          <p>Share your experience with mouse sensors, keyboard acoustics, or desk mats and help fellow players build their setup.</p>
+          <button class="btn btn-outline" id="openWriteReviewBtn2" type="button">Rate Your Gear <span>↗</span></button>
+        </div>
+      </div>
+
+      <div class="reviews-toolbar">
+        <div class="filter-row reviews-filter-row" id="reviewFilterRow" role="tablist" aria-label="Filter customer reviews">
+          <button class="filter-chip active" data-rev-filter="All" type="button">All Reviews</button>
+          <button class="filter-chip" data-rev-filter="5" type="button">5 ★ Only</button>
+          <button class="filter-chip" data-rev-filter="Mice" type="button">Mice</button>
+          <button class="filter-chip" data-rev-filter="Keyboards" type="button">Keyboards</button>
+          <button class="filter-chip" data-rev-filter="Audio" type="button">Audio</button>
+          <button class="filter-chip" data-rev-filter="Mousepads" type="button">Mousepads &amp; Desk</button>
+        </div>
+        <div class="shop-controls">
+          <label class="sr-only" for="reviewSortSelect">Sort reviews</label>
+          <select id="reviewSortSelect">
+            <option value="helpful">Sort: Most Helpful</option>
+            <option value="newest">Sort: Newest First</option>
+            <option value="highest">Sort: Highest Rating</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="community-reviews-grid" id="communityReviewsGrid"></div>
+    </section>
+
+    <section class="newsletter">
+      <div>
+        <div class="eyebrow">THE GEAR DROP, DELIVERED</div>
+        <h2>GET IN THE <span>LOOP.</span></h2>
+        <p>New limited drops, desk setup guides and member-only discount codes. Zero spam, just pure hardware.</p>
+      </div>
+      <form id="newsletterForm">
+        <label class="sr-only" for="emailInput">Email address</label>
+        <input type="email" id="emailInput" placeholder="Enter your email address" required>
+        <button type="submit">Join the list <span>↗</span></button>
+        <small id="newsletterMessage">By subscribing, you agree to receive store updates &amp; get 10% off with code FORGE10.</small>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="brand" href="#home"><span class="brand-mark">G<span>+</span></span><span>GEAR<span class="brand-light">FORGE</span></span></a>
+        <p>Performance gear for your next level.<br>Engineered around the way you play, stream, and build.</p>
+        <div class="socials">
+          <a href="#shop" aria-label="Instagram">IG</a>
+          <a href="#shop" aria-label="YouTube">YT</a>
+          <a href="#shop" aria-label="Discord">DC</a>
+          <a href="#shop" aria-label="X">𝕏</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>EXPLORE</h4>
+        <a href="#shop">All 40 products</a>
+        <a href="#categories">Loadout categories</a>
+        <a href="#featured">Best sellers</a>
+        <a href="#setup">The Forge standard</a>
+      </div>
+      <div class="footer-col">
+        <h4>ACCOUNT &amp; BAG</h4>
+        <a href="# account" id="footerSignInLink">Sign in / Register</a>
+        <a href="#cart" id="footerCartLink">View shopping bag</a>
+        <a href="#wishlist" id="footerWishlistLink">Saved wishlist</a>
+        <a href="#footer">ForgeCare warranty</a>
+      </div>
+      <div class="footer-col footer-status">
+        <h4>READY WHEN YOU ARE</h4>
+        <p><span class="status-dot"></span> All warehouses dispatching within 24 hrs.</p>
+        <span class="payment-pills">UPI &nbsp;·&nbsp; VISA &nbsp;·&nbsp; MASTERCARD &nbsp;·&nbsp; RUPAY &nbsp;·&nbsp; COD</span>
+      </div>
+    </div>
+    <div class="footer-bottom" id="footer">
+      <span>© 2026 GEARFORGE HARDWARE LABS. ALL RIGHTS RESERVED.</span>
+      <span>MADE FOR THE LOVE OF GEAR <b>✳</b></span>
+      <a href="#home">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+
+  <!-- SHOPPING CART DRAWER -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="cart-head">
+      <div>
+        <div class="eyebrow">YOUR LOADOUT</div>
+        <h3>Shopping Bag <span id="drawerCount">(0)</span></h3>
+      </div>
+      <div class="cart-head-actions">
+        <button id="clearCartBtn" class="clear-cart-btn" type="button" title="Remove all items from bag" hidden>Clear all</button>
+        <button id="closeCart" class="close-btn" type="button" aria-label="Close cart">×</button>
+      </div>
+    </div>
+
+    <div class="shipping-meter" id="shippingMeter">
+      <div class="shipping-meter-text" id="shippingMeterText">Add <b>₹1,999</b> more for <b>FREE Express Shipping</b></div>
+      <div class="shipping-bar-track"><div class="shipping-bar-fill" id="shippingBarFill" style="width:0%"></div></div>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-bottom" id="cartBottom">
+      <form class="promo-row" id="promoForm">
+        <input type="text" id="promoInput" placeholder="Promo code (try FORGE10)" aria-label="Promo code">
+        <button type="submit">Apply</button>
+      </form>
+      <div class="promo-active" id="promoActive" hidden>
+        <span id="promoActiveLabel">Code FORGE10 (-10%)</span>
+        <button type="button" id="removePromoBtn">Remove ×</button>
+      </div>
+
+      <div class="cart-summary-lines">
+        <div class="summary-line"><span>Subtotal</span><span id="cartSubtotal">₹0</span></div>
+        <div class="summary-line discount-line" id="cartDiscountRow" hidden><span>Promo discount</span><span id="cartDiscountVal">−₹0</span></div>
+        <div class="summary-line"><span>Shipping</span><span id="cartShippingVal">Calculated at checkout</span></div>
+        <div class="summary-line total-line"><span>Total</span><strong id="cartTotal">₹0</strong></div>
+      </div>
+
+      <button class="btn btn-primary checkout-btn" id="checkoutBtn" type="button">
+        <span>Proceed to Checkout</span>
+        <span>→</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- AUTHENTICATION & ACCOUNT MODAL (LOGIN / SIGN UP / PROFILE) -->
+  <div class="modal-backdrop" id="authModal" aria-hidden="true">
+    <div class="modal-card auth-modal-card" role="dialog" aria-modal="true" aria-labelledby="authModalTitle">
+      <button class="close-btn modal-close" id="closeAuthModal" type="button" aria-label="Close authentication modal">×</button>
+
+      <!-- Guest View: Login & Sign Up Tabs -->
+      <div id="authGuestView">
+        <div class="auth-header">
+          <div class="eyebrow"><span class="eyebrow-line"></span> GEARFORGE ID</div>
+          <h3 id="authModalTitle">Welcome to the Forge</h3>
+          <p id="authModalSubtitle">Sign in to sync your loadout, track orders &amp; unlock member pricing.</p>
+        </div>
+
+        <div class="auth-tabs" role="tablist">
+          <button type="button" class="auth-tab active" data-auth-tab="login" id="tabLoginBtn">Log In</button>
+          <button type="button" class="auth-tab" data-auth-tab="signup" id="tabSignupBtn">Create Account</button>
+        </div>
+
+        <div class="auth-alert" id="authAlert" hidden></div>
+
+        <!-- LOGIN FORM -->
+        <form id="loginForm" class="auth-form" autocomplete="on">
+          <div class="form-field">
+            <label for="loginEmail">Email Address</label>
+            <input type="email" id="loginEmail" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-field">
+            <div class="label-row">
+              <label for="loginPassword">Password</label>
+              <button type="button" class="text-btn" id="forgotPassBtn">Forgot password?</button>
+            </div>
+            <div class="password-wrap">
+              <input type="password" id="loginPassword" name="password" placeholder="Enter your password" required minlength="6">
+              <button type="button" class="pw-toggle" data-toggle-pw="loginPassword" aria-label="Show password">Show</button>
+            </div>
+          </div>
+          <label class="checkbox-row">
+            <input type="checkbox" id="rememberMe" checked>
+            <span>Keep me signed in on this device</span>
+          </label>
+          <button type="submit" class="btn btn-primary auth-submit-btn">Log In to GearForge <span>→</span></button>
+        </form>
+
+        <!-- SIGN UP FORM -->
+        <form id="signupForm" class="auth-form" autocomplete="on" hidden>
+          <div class="form-row-2">
+            <div class="form-field">
+              <label for="signupName">Full Name</label>
+              <input type="text" id="signupName" name="name" placeholder="Aarav Sharma" required minlength="2">
+            </div>
+            <div class="form-field">
+              <label for="signupGamertag">Setup Tag (Optional)</label>
+              <input type="text" id="signupGamertag" name="gamertag" placeholder="e.g. NightOwl_GG">
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="signupEmail">Email Address</label>
+            <input type="email" id="signupEmail" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-field">
+            <label for="signupPassword">Create Password</label>
+            <div class="password-wrap">
+              <input type="password" id="signupPassword" name="password" placeholder="At least 6 characters" required minlength="6">
+              <button type="button" class="pw-toggle" data-toggle-pw="signupPassword" aria-label="Show password">Show</button>
+            </div>
+            <div class="pw-strength" id="pwStrength">
+              <div class="pw-bar"><span id="pwStrengthFill"></span></div>
+              <small id="pwStrengthLabel">Use 6+ characters with letters &amp; numbers</small>
+            </div>
+          </div>
+          <label class="checkbox-row">
+            <input type="checkbox" id="signupBonus" checked>
+            <span>Send me the <b>FORGE10</b> welcome discount &amp; drop alerts</span>
+          </label>
+          <button type="submit" class="btn btn-primary auth-submit-btn">Create Forge Account <span>↗</span></button>
+        </form>
+
+        <div class="auth-divider"><span>OR CONTINUE WITH</span></div>
+        <div class="social-auth-grid">
+          <button type="button" class="social-btn" data-social="Google">
+            <span>G</span> Google
+          </button>
+          <button type="button" class="social-btn" data-social="Discord">
+            <span>◈</span> Discord
+          </button>
+          <button type="button" class="social-btn" data-social="GitHub">
+            <span>⌘</span> GitHub
+          </button>
+        </div>
+      </div>
+
+      <!-- Logged-in Member Profile View -->
+      <div id="authProfileView" hidden>
+        <div class="profile-banner">
+          <div class="profile-avatar-lg" id="profileAvatarLg">GF</div>
+          <div>
+            <span class="member-pill">FORGE ELITE MEMBER</span>
+            <h3 id="profileNameDisplay">Player One</h3>
+            <p id="profileEmailDisplay">player@gearforge.gg</p>
+          </div>
+        </div>
+
+        <div class="profile-stats-grid">
+          <div class="profile-stat-box">
+            <strong id="profileCartStat">0</strong>
+            <small>Items in Bag</small>
+          </div>
+          <div class="profile-stat-box">
+            <strong id="profileWishlistStat">0</strong>
+            <small>Saved Wishlist</small>
+          </div>
+          <div class="profile-stat-box">
+            <strong id="profileOrdersStat">0</strong>
+            <small>Orders Placed</small>
+          </div>
+        </div>
+
+        <div class="profile-section">
+          <h4>RECENT ORDERS</h4>
+          <div class="order-history-list" id="orderHistoryList"></div>
+        </div>
+
+        <div class="profile-actions">
+          <button type="button" class="btn btn-outline" id="profileViewWishlistBtn">View Saved Gear ♥</button>
+          <button type="button" class="btn btn-danger" id="logoutBtn">Sign Out</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCT QUICK VIEW MODAL -->
+  <div class="modal-backdrop" id="quickViewModal" aria-hidden="true">
+    <div class="modal-card quickview-card" role="dialog" aria-modal="true" aria-labelledby="qvTitle">
+      <button class="close-btn modal-close" id="closeQuickView" type="button" aria-label="Close product details">×</button>
+      <div class="qv-grid" id="qvContent"></div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE CHECKOUT & FORGEPAY MOCK PAYMENT PORTAL MODAL -->
+  <div class="modal-backdrop" id="checkoutModal" aria-hidden="true">
+    <div class="modal-card checkout-modal-card" role="dialog" aria-modal="true" aria-labelledby="checkoutModalTitle">
+      <button class="close-btn modal-close" id="closeCheckoutModal" type="button" aria-label="Close checkout">×</button>
+
+      <!-- STEP 1: SHIPPING & DISPATCH DETAILS -->
+      <div id="checkoutFormView">
+        <div class="checkout-step-head">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-line"></span> STEP 1 OF 2 · EXPRESS DISPATCH</div>
+            <h3 id="checkoutModalTitle">Shipping &amp; Delivery Details</h3>
+          </div>
+          <button type="button" class="btn-demo-fill" id="fillDemoShippingBtn" title="Auto-fill sample shipping details">⚡ Fill Demo Address</button>
+        </div>
+
+        <form id="checkoutOrderForm" class="checkout-form">
+          <div class="form-row-2">
+            <div class="form-field">
+              <label for="coName">Recipient Name</label>
+              <input type="text" id="coName" required placeholder="Full name">
+            </div>
+            <div class="form-field">
+              <label for="coPhone">Phone Number</label>
+              <input type="tel" id="coPhone" required placeholder="+91 98765 43210">
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="coEmail">Email for Order Tracking &amp; Invoice</label>
+            <input type="email" id="coEmail" required placeholder="you@example.com">
+          </div>
+          <div class="form-field">
+            <label for="coAddress">Delivery Address</label>
+            <input type="text" id="coAddress" required placeholder="House/Flat No., Street, Landmark">
+          </div>
+          <div class="form-row-2">
+            <div class="form-field">
+              <label for="coCity">City &amp; State</label>
+              <input type="text" id="coCity" required placeholder="Bengaluru, Karnataka">
+            </div>
+            <div class="form-field">
+              <label for="coPin">PIN Code</label>
+              <input type="text" id="coPin" required placeholder="560001" pattern="[0-9]{6}" title="6-digit PIN code">
+            </div>
+          </div>
+
+          <div class="checkout-summary-bar" id="checkoutSummaryBar"></div>
+
+          <button type="submit" class="btn btn-primary auth-submit-btn">Proceed to ForgePay Payment Portal <span>🔒</span></button>
+        </form>
+      </div>
+
+      <!-- STEP 2: FORGEPAY FICTIONAL MOCK PAYMENT PORTAL -->
+      <div id="paymentPortalView" class="forgepay-portal" hidden>
+        <div class="fp-header">
+          <div class="fp-brand">
+            <div class="fp-shield">🛡️</div>
+            <div>
+              <div class="fp-brand-title">ForgePay <span>Secure Gateway</span></div>
+              <div class="fp-brand-sub">256-Bit SSL Encrypted · Fictional Hackathon Sandbox</div>
+            </div>
+          </div>
+          <div class="fp-meta">
+            <div class="fp-timer-pill" title="Session expires in">⏱ <span id="fpTimerText">09:59</span></div>
+            <div class="fp-amount-box">
+              <small>Payable Now</small>
+              <strong id="fpPayableAmount">₹0</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="fp-body">
+          <!-- Payment Method Sidebar / Tabs -->
+          <div class="fp-tabs" role="tablist" aria-label="Payment Methods">
+            <button type="button" class="fp-tab active" data-pay-tab="qr" role="tab" aria-selected="true">
+              <span class="fp-tab-ico">📱</span>
+              <div>
+                <strong>UPI QR Code</strong>
+                <small>Scan with any app</small>
+              </div>
+              <span class="fp-badge-fast">INSTANT</span>
+            </button>
+            <button type="button" class="fp-tab" data-pay-tab="upi" role="tab" aria-selected="false">
+              <span class="fp-tab-ico">⚡</span>
+              <div>
+                <strong>UPI ID / VPA</strong>
+                <small>GPay, PhonePe, Paytm</small>
+              </div>
+            </button>
+            <button type="button" class="fp-tab" data-pay-tab="card" role="tab" aria-selected="false">
+              <span class="fp-tab-ico">💳</span>
+              <div>
+                <strong>Credit / Debit Card</strong>
+                <small>Visa, MasterCard, RuPay</small>
+              </div>
+            </button>
+            <button type="button" class="fp-tab" data-pay-tab="emi" role="tab" aria-selected="false">
+              <span class="fp-tab-ico">📅</span>
+              <div>
+                <strong>Easy Monthly EMI</strong>
+                <small>No-Cost EMI available</small>
+              </div>
+              <span class="fp-badge-offer">0% APR</span>
+            </button>
+            <button type="button" class="fp-tab" data-pay-tab="netbanking" role="tab" aria-selected="false">
+              <span class="fp-tab-ico">🏦</span>
+              <div>
+                <strong>NetBanking</strong>
+                <small>40+ Indian Banks</small>
+              </div>
+            </button>
+            <button type="button" class="fp-tab" data-pay-tab="cod" role="tab" aria-selected="false">
+              <span class="fp-tab-ico">📦</span>
+              <div>
+                <strong>Pay on Delivery</strong>
+                <small>Cash / UPI at Doorstep</small>
+              </div>
+            </button>
+          </div>
+
+          <!-- Payment Method Content Panels -->
+          <div class="fp-panels">
+
+            <!-- PANEL 1: DYNAMIC QR CODE -->
+            <div class="fp-panel active" id="fpPanel-qr" data-panel="qr">
+              <div class="fp-panel-head">
+                <h4>Scan Dynamic UPI QR Code</h4>
+                <span class="fp-tag">Zero Convenience Fee</span>
+              </div>
+              <div class="fp-qr-showcase">
+                <div class="fp-qr-frame" id="fpQrFrame">
+                  <div class="fp-qr-laser"></div>
+                  <div id="fpQrSvgWrap" class="fp-qr-svg-wrap" aria-label="Mock UPI QR Code"></div>
+                  <div class="fp-qr-center-badge">⚡GF</div>
+                </div>
+                <div class="fp-qr-info">
+                  <p class="fp-qr-merchant">Merchant: <strong>GEARFORGE GAMING PVT LTD</strong></p>
+                  <p class="fp-qr-vpa">UPI Merchant ID: <code>gearforge.pay@okaxis</code></p>
+                  <div class="fp-upi-badges">
+                    <span class="upi-pill">GPay</span>
+                    <span class="upi-pill">PhonePe</span>
+                    <span class="upi-pill">Paytm</span>
+                    <span class="upi-pill">BHIM</span>
+                    <span class="upi-pill">CRED Pay</span>
+                  </div>
+                  <button type="button" class="btn-simulate-qr" id="simulateQrScanBtn">
+                    📲 Simulate Mobile QR Scan &amp; Instant Pay
+                  </button>
+                  <small class="fp-hint">Clicking above simulates scanning this QR code from your phone's UPI app.</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- PANEL 2: UPI ID / VPA -->
+            <div class="fp-panel" id="fpPanel-upi" data-panel="upi" hidden>
+              <div class="fp-panel-head">
+                <h4>Pay via UPI App or Virtual Payment Address</h4>
+                <span class="fp-tag">NPCI Verified</span>
+              </div>
+              <p class="fp-sublabel">1. Select your preferred UPI App</p>
+              <div class="fp-upi-apps-grid" id="fpUpiAppsGrid">
+                <button type="button" class="fp-upi-app-btn active" data-upi-app="Google Pay" data-handle="@okicici">
+                  <span class="app-dot gpay">G</span> Google Pay
+                </button>
+                <button type="button" class="fp-upi-app-btn" data-upi-app="PhonePe" data-handle="@ybl">
+                  <span class="app-dot phonepe">Pe</span> PhonePe
+                </button>
+                <button type="button" class="fp-upi-app-btn" data-upi-app="Paytm UPI" data-handle="@paytm">
+                  <span class="app-dot paytm">P</span> Paytm
+                </button>
+                <button type="button" class="fp-upi-app-btn" data-upi-app="BHIM / CRED" data-handle="@upi">
+                  <span class="app-dot bhim">₹</span> BHIM / CRED
+                </button>
+              </div>
+
+              <p class="fp-sublabel">2. Enter &amp; Verify your UPI ID</p>
+              <div class="fp-upi-input-row">
+                <input type="text" id="fpUpiIdInput" placeholder="username@okicici" value="pro.gamer@okicici">
+                <button type="button" class="btn-verify-vpa" id="verifyUpiVpaBtn">Verify VPA</button>
+              </div>
+              <div class="fp-vpa-status" id="fpVpaStatus">
+                ✓ Verified Account Holder: <strong>TANISHQ SHARMA (ICICI BANK UPI)</strong>
+              </div>
+            </div>
+
+            <!-- PANEL 3: CREDIT / DEBIT CARDS -->
+            <div class="fp-panel" id="fpPanel-card" data-panel="card" hidden>
+              <div class="fp-panel-head">
+                <h4>Credit / Debit Card</h4>
+                <button type="button" class="btn-demo-fill" id="fillDemoCardBtn">⚡ Fill Test Card</button>
+              </div>
+
+              <!-- Live Interactive Card Visual -->
+              <div class="fp-card-visual" id="fpCardVisual">
+                <div class="fp-card-top">
+                  <span class="fp-card-chip"></span>
+                  <span class="fp-card-network" id="fpCardNetworkBadge">VISA PLATINUM</span>
+                </div>
+                <div class="fp-card-num-display" id="fpCardNumDisplay">4532 •••• •••• 8890</div>
+                <div class="fp-card-bottom">
+                  <div>
+                    <small>CARD HOLDER</small>
+                    <strong id="fpCardHolderDisplay">PRO GAMER</strong>
+                  </div>
+                  <div>
+                    <small>EXPIRES</small>
+                    <strong id="fpCardExpDisplay">08/29</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fp-card-inputs">
+                <div class="form-field">
+                  <label for="fpCardNumber">Card Number (16 digits)</label>
+                  <input type="text" id="fpCardNumber" maxlength="19" placeholder="4532 7100 8421 8890" value="4532 7100 8421 8890">
+                </div>
+                <div class="form-row-3">
+                  <div class="form-field">
+                    <label for="fpCardName">Name on Card</label>
+                    <input type="text" id="fpCardName" placeholder="Cardholder Name" value="TANISHQ SHARMA">
+                  </div>
+                  <div class="form-field">
+                    <label for="fpCardExpiry">Expiry (MM/YY)</label>
+                    <input type="text" id="fpCardExpiry" maxlength="5" placeholder="08/29" value="08/29">
+                  </div>
+                  <div class="form-field">
+                    <label for="fpCardCvv">CVV</label>
+                    <input type="password" id="fpCardCvv" maxlength="4" placeholder="•••" value="842">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PANEL 4: EASY MONTHLY EMI -->
+            <div class="fp-panel" id="fpPanel-emi" data-panel="emi" hidden>
+              <div class="fp-panel-head">
+                <h4>Easy Monthly EMI Plans</h4>
+                <span class="fp-tag">Instant Approval</span>
+              </div>
+              <div class="form-field">
+                <label for="fpEmiBank">Select EMI Issuing Bank / Provider</label>
+                <select id="fpEmiBank" class="fp-select">
+                  <option value="HDFC Bank Credit Card EMI">HDFC Bank Credit Card EMI (No-Cost Eligible)</option>
+                  <option value="ICICI Bank Coral/Rubyx EMI">ICICI Bank Credit Card EMI (No-Cost Eligible)</option>
+                  <option value="SBI Card SimplyCLICK EMI">SBI Card EMI</option>
+                  <option value="Axis Bank Neo/Magnus EMI">Axis Bank Credit Card EMI</option>
+                  <option value="Bajaj Finserv Insta EMI Card">Bajaj Finserv No-Cost EMI Card</option>
+                </select>
+              </div>
+              <p class="fp-sublabel">Choose Tenure Plan (Dynamically calculated on cart total)</p>
+              <div class="fp-emi-plans-list" id="fpEmiPlansList">
+                <!-- Populated dynamically in JS -->
+              </div>
+            </div>
+
+            <!-- PANEL 5: NETBANKING -->
+            <div class="fp-panel" id="fpPanel-netbanking" data-panel="netbanking" hidden>
+              <div class="fp-panel-head">
+                <h4>Direct NetBanking Portal</h4>
+                <span class="fp-tag">All Major Indian Banks</span>
+              </div>
+              <p class="fp-sublabel">Popular Retail Banks</p>
+              <div class="fp-banks-grid" id="fpBanksGrid">
+                <button type="button" class="fp-bank-card active" data-bank="HDFC Bank NetBanking">
+                  <span class="bank-badge hdfc">HDFC</span>
+                  <strong>HDFC Bank</strong>
+                </button>
+                <button type="button" class="fp-bank-card" data-bank="ICICI Bank NetBanking">
+                  <span class="bank-badge icici">ICICI</span>
+                  <strong>ICICI Bank</strong>
+                </button>
+                <button type="button" class="fp-bank-card" data-bank="State Bank of India (SBI)">
+                  <span class="bank-badge sbi">SBI</span>
+                  <strong>SBI YONO</strong>
+                </button>
+                <button type="button" class="fp-bank-card" data-bank="Axis Bank NetBanking">
+                  <span class="bank-badge axis">AXIS</span>
+                  <strong>Axis Bank</strong>
+                </button>
+                <button type="button" class="fp-bank-card" data-bank="Kotak Mahindra Bank">
+                  <span class="bank-badge kotak">KOTAK</span>
+                  <strong>Kotak 811</strong>
+                </button>
+                <button type="button" class="fp-bank-card" data-bank="Yes Bank NetBanking">
+                  <span class="bank-badge yes">YES</span>
+                  <strong>Yes Bank</strong>
+                </button>
+              </div>
+              <div class="form-field" style="margin-top: 12px;">
+                <label for="fpOtherBankSelect">Or Choose From Other Supported Banks</label>
+                <select id="fpOtherBankSelect" class="fp-select">
+                  <option value="">-- Using Popular Bank Selected Above --</option>
+                  <option value="Bank of Baroda Corporate/Retail">Bank of Baroda</option>
+                  <option value="Punjab National Bank (PNB)">Punjab National Bank (PNB)</option>
+                  <option value="IDFC FIRST Bank NetBanking">IDFC FIRST Bank</option>
+                  <option value="IndusInd Bank NetBanking">IndusInd Bank</option>
+                  <option value="Canara Bank NetBanking">Canara Bank</option>
+                  <option value="Federal Bank NetBanking">Federal Bank</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- PANEL 6: PAY ON DELIVERY (COD) -->
+            <div class="fp-panel" id="fpPanel-cod" data-panel="cod" hidden>
+              <div class="fp-panel-head">
+                <h4>Pay on Delivery (Cash / Doorstep UPI)</h4>
+                <span class="fp-tag">Zero Advance Required</span>
+              </div>
+              <div class="fp-cod-box">
+                <div class="fp-cod-icon">🚚</div>
+                <div>
+                  <h5>Doorstep Verification &amp; Instant Dispatch</h5>
+                  <p>Pay via <strong>Cash, GPay, PhonePe, or Card Machine</strong> directly to our BlueDart / Delhivery courier partner when your gaming gear arrives at your doorstep.</p>
+                  <ul class="fp-cod-perks">
+                    <li>✓ Open-box tamper inspection supported</li>
+                    <li>✓ No extra COD handling fee on GearForge orders</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="fp-footer">
+          <button type="button" class="btn btn-outline fp-back-btn" id="fpBackToShippingBtn">← Edit Address</button>
+          <div class="fp-footer-right">
+            <span class="fp-selected-method-label" id="fpSelectedMethodLabel">Mode: Dynamic UPI QR</span>
+            <button type="button" class="btn btn-primary fp-pay-cta" id="fpConfirmPayBtn">
+              Authorize &amp; Pay <span id="fpBtnAmountText">₹0</span> 🔒
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 3: SIMULATED 3D-SECURE / BANK OTP & NPCI VERIFICATION -->
+      <div id="paymentProcessingView" class="fp-processing-view" hidden>
+        <div class="fp-otp-card">
+          <div class="fp-spinner-ring" id="fpSpinnerRing"></div>
+          <div class="eyebrow" style="justify-content:center">FORGEPAY 3D-SECURE AUTHENTICATION</div>
+          <h3 id="fpProcessTitle">Authorize Mock Bank Transaction</h3>
+          <p id="fpProcessSub">A fictional 6-digit One-Time Password (OTP) has been auto-generated for your hackathon demo session.</p>
+
+          <div class="fp-otp-box" id="fpOtpInteractiveBox">
+            <label for="fpOtpInput">Simulated Bank / NPCI Security Code</label>
+            <div class="fp-otp-row">
+              <input type="text" id="fpOtpInput" maxlength="6" value="748291" aria-label="6 digit mock OTP">
+              <button type="button" class="btn btn-primary" id="fpVerifyOtpBtn">Verify &amp; Complete ✓</button>
+            </div>
+            <small class="fp-otp-hint">Demo OTP <code>748291</code> is pre-filled — click Verify or wait for auto-confirmation.</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 4: ORDER CONFIRMED & TRANSACTION RECEIPT -->
+      <div id="checkoutSuccessView" class="checkout-success" hidden>
+        <div class="success-icon">✓</div>
+        <div class="eyebrow" style="justify-content:center">PAYMENT VERIFIED · ORDER CONFIRMED</div>
+        <h3 id="successOrderTitle">Your Gear is Being Forged!</h3>
+        <p id="successOrderText">Order #GF-1042 has been placed and will dispatch within 24 hours.</p>
+
+        <div class="fp-receipt-card" id="fpReceiptCard">
+          <!-- Populated dynamically with Transaction ID, Order ID, Mode, Amount, and Timestamp -->
+        </div>
+
+        <div class="success-actions">
+          <button type="button" class="btn btn-primary" id="successDoneBtn">Continue Exploring <span>↗</span></button>
+          <button type="button" class="btn btn-outline" id="printReceiptBtn">🖨️ Print Receipt</button>
+          <button type="button" class="btn btn-outline" id="successViewOrdersBtn">View in My Account</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WRITE A REVIEW MODAL -->
+  <div class="modal-backdrop" id="writeReviewModal" aria-hidden="true">
+    <div class="modal-card write-review-modal-card" role="dialog" aria-modal="true" aria-labelledby="writeReviewTitle">
+      <button class="close-btn modal-close" id="closeWriteReviewModal" type="button" aria-label="Close review form">×</button>
+      <div class="eyebrow"><span class="eyebrow-line"></span> RATE YOUR LOADOUT</div>
+      <h3 id="writeReviewTitle">Write a Customer Review</h3>
+      <p class="modal-sub">Your review updates the live product rating and helps the GearForge community.</p>
+
+      <form id="writeReviewForm" class="auth-form">
+        <div class="form-field">
+          <label for="revProductSelect">Select Product</label>
+          <select id="revProductSelect" required></select>
+        </div>
+
+        <div class="form-field">
+          <label>Your Overall Rating</label>
+          <div class="star-picker" id="starPicker" role="radiogroup" aria-label="Star rating">
+            <button type="button" class="star-pick-btn active" data-star="1" aria-label="1 star">★</button>
+            <button type="button" class="star-pick-btn active" data-star="2" aria-label="2 stars">★</button>
+            <button type="button" class="star-pick-btn active" data-star="3" aria-label="3 stars">★</button>
+            <button type="button" class="star-pick-btn active" data-star="4" aria-label="4 stars">★</button>
+            <button type="button" class="star-pick-btn active" data-star="5" aria-label="5 stars">★</button>
+            <span class="star-picker-label" id="starPickerLabel">5 / 5 — Endgame Gear</span>
+          </div>
+          <input type="hidden" id="revRatingInput" value="5">
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-field">
+            <label for="revAuthorName">Your Name</label>
+            <input type="text" id="revAuthorName" placeholder="e.g. Rohan Verma" required minlength="2">
+          </div>
+          <div class="form-field">
+            <label for="revSetupTag">Primary Use / Setup</label>
+            <input type="text" id="revSetupTag" placeholder="e.g. Valorant / Coding Setup">
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="revHeadline">Review Headline</label>
+          <input type="text" id="revHeadline" placeholder="Summarize your experience in a few words" required minlength="3">
+        </div>
+
+        <div class="form-field">
+          <label for="revBody">Detailed Review</label>
+          <textarea id="revBody" rows="4" placeholder="How is the build quality, sensor performance, acoustics, or comfort?" required minlength="10"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary auth-submit-btn">Publish Verified Review <span>↗</span></button>
+      </form>
+    </div>
+  </div>
+
+  <!-- WHATSAPP-STYLE AI CHATBOT & LIVE VOICE CALL WIDGET -->
+  <div class="wa-widget" id="waWidget">
+    <div class="wa-teaser" id="waTeaser">
+      <button class="wa-teaser-close" id="waTeaserClose" type="button" aria-label="Dismiss chat preview">×</button>
+      <div class="wa-teaser-body" id="waTeaserBody">
+        <div class="wa-teaser-title-row">
+          <span class="wa-teaser-live-dot"></span>
+          <strong>ForgeBot AI · Chat &amp; Voice Concierge <span class="wa-verified">✓</span></strong>
+        </div>
+        <span>Ask about specs, grip styles, or start a live 2-way AI Voice Call!</span>
+      </div>
+    </div>
+
+    <div class="wa-launcher-dock">
+      <button class="wa-quick-call-fab" id="waQuickCallFab" type="button" title="Start Live AI Voice Call Directly" aria-label="Start Live AI Voice Call">
+        <span class="wa-fab-call-dot"></span>
+        🎙️ <span>Live Call</span>
+      </button>
+
+      <button class="wa-launcher" id="waLauncher" type="button" aria-label="Open ForgeBot AI WhatsApp chat">
+        <span class="wa-pulse-ring"></span>
+        <svg class="wa-icon-chat" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.83-.11-.42-.13-.97-.31-1.66-.61-2.92-1.26-4.83-4.21-4.98-4.41-.15-.2-1.19-1.58-1.19-3.02 0-1.44.75-2.14 1.02-2.43.27-.29.59-.36.79-.36.2 0 .4.003.57.01.18.01.43-.07.67.51.24.59.82 2.02.9 2.17.07.15.12.32.02.52-.1.2-.15.32-.3.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.35 1.45.29.15.46.12.63-.07.17-.2.73-.85.92-1.14.2-.29.39-.24.66-.15.27.1 1.71.81 2 .95.29.15.49.22.56.34.07.12.07.71-.17 1.39z"/></svg>
+        <span class="wa-unread-badge" id="waUnreadBadge">1</span>
+      </button>
+    </div>
+
+    <section class="wa-chat-window" id="waChatWindow" aria-label="ForgeBot AI Assistant" aria-hidden="true">
+      <header class="wa-header">
+        <div class="wa-header-left">
+          <div class="wa-avatar-wrap">
+            <div class="wa-avatar">G<span>+</span></div>
+            <span class="wa-online-dot"></span>
+          </div>
+          <div class="wa-contact-info">
+            <div class="wa-contact-name">
+              <span>ForgeBot AI</span>
+              <span class="wa-verified" title="Verified GearForge Assistant">✓</span>
+              <span class="wa-pro-pill">NEURAL v4</span>
+            </div>
+            <div class="wa-contact-status" id="waStatusText">online · text &amp; voice concierge</div>
+          </div>
+        </div>
+        <div class="wa-header-actions">
+          <button type="button" class="wa-head-btn wa-call-trigger-btn" id="waStartCallBtn" title="Start Live AI Voice Call">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+            <span>Voice Call</span>
+          </button>
+          <button type="button" class="wa-head-btn" id="waExpandBtn" title="Toggle Expanded Studio View" aria-label="Expand chat window">⛶</button>
+          <button type="button" class="wa-head-btn" id="waAiKeyToggle" title="Configure AI Engine">⚙ AI</button>
+          <button type="button" class="wa-head-btn" id="waResetChatBtn" title="Clear chat history">↺</button>
+          <button type="button" class="wa-head-btn wa-close-btn" id="waCloseBtn" aria-label="Minimize chat">✕</button>
+        </div>
+      </header>
+
+      <div class="wa-api-drawer" id="waApiDrawer" hidden>
+        <div class="wa-api-drawer-inner">
+          <strong>⚡ AI Engine Mode: <span id="waEngineModeBadge">Cloud AI + Store Brain Active</span></strong>
+          <p>ForgeBot knows all 40 products, hardware science, cart &amp; policies, and supports live voice calls. Optional custom API key:</p>
+          <div class="wa-api-input-row">
+            <input type="password" id="waGeminiKeyInput" placeholder="Paste API Key">
+            <button type="button" id="waSaveKeyBtn">Save</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ONE-TIME AI CALLS & FOLLOW-UPS CONSENT OVERLAY -->
+      <div class="wa-consent-overlay" id="waConsentOverlay" hidden role="dialog" aria-modal="true" aria-labelledby="waConsentTitle">
+        <div class="wa-consent-card">
+          <div class="wa-consent-badge">🛡️ ONE-TIME PRIVACY &amp; AI CONSENT</div>
+          <h4 id="waConsentTitle">Allow AI Voice Calls &amp; Smart Follow-Ups?</h4>
+          <p class="wa-consent-desc">
+            Before connecting with <strong>ForgeBot AI</strong>, please grant one-time permission for interactive voice assistance and personalized store follow-ups. <em>You will only be asked this once.</em>
+          </p>
+
+          <div class="wa-consent-checks">
+            <label class="wa-consent-item">
+              <input type="checkbox" id="waConsentCallsCheck" checked>
+              <div>
+                <strong>🎙️ Live AI Voice Calls &amp; Audio Concierge</strong>
+                <small>Allow real-time 2-way voice calls with our polite AI hardware specialist using a single mic permission.</small>
+              </div>
+            </label>
+            <label class="wa-consent-item">
+              <input type="checkbox" id="waConsentFollowupCheck" checked>
+              <div>
+                <strong>💬 Automated AI Follow-Ups &amp; Order Alerts</strong>
+                <small>Allow ForgeBot to ask tailored setup follow-up questions, remember your preferences, and send cart/order updates.</small>
+              </div>
+            </label>
+          </div>
+
+          <div class="wa-consent-phone-field">
+            <label for="waConsentPhoneInput">Optional WhatsApp / Phone for Follow-Up Alerts</label>
+            <input type="tel" id="waConsentPhoneInput" placeholder="+91 98765 43210 (Optional)">
+          </div>
+
+          <div class="wa-consent-actions">
+            <button type="button" class="wa-consent-accept-btn" id="waAcceptConsentBtn">
+              ✓ I Agree &amp; Continue (Ask Only Once)
+            </button>
+            <button type="button" class="wa-consent-minimal-btn" id="waMinimalConsentBtn">
+              Continue with Basic Chat Only
+            </button>
+          </div>
+          <small class="wa-consent-footnote">🔒 Encrypted &amp; stored locally · Your preference is remembered permanently.</small>
+        </div>
+      </div>
+
+      <!-- WHATSAPP LIVE AI VOICE CALL OVERLAY SCREEN -->
+      <div class="wa-call-overlay" id="waCallOverlay" hidden aria-live="polite">
+        <div class="wa-call-top">
+          <span class="wa-call-encrypted">🔒 End-to-end encrypted · Live AI Voice Concierge</span>
+          <div class="wa-call-title">ForgeBot AI <span class="wa-verified">✓</span></div>
+          <div class="wa-call-subtitle" id="waCallStateText">Calling GearForge Specialist…</div>
+          <div class="wa-call-timer" id="waCallTimer">00:00</div>
+        </div>
+
+        <div class="wa-call-center">
+          <div class="wa-call-avatar-stage" id="waCallAvatarStage">
+            <span class="wa-call-ring r1"></span>
+            <span class="wa-call-ring r2"></span>
+            <span class="wa-call-ring r3"></span>
+            <div class="wa-call-avatar">G<span>+</span></div>
+          </div>
+
+          <div class="wa-call-waveform" id="waCallWaveform" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+
+          <div class="wa-call-live-badge" id="waCallLiveBadge">🎙️ Connecting polite voice…</div>
+
+          <!-- Live Spoken Subtitles / Transcript -->
+          <div class="wa-call-transcript-box">
+            <div class="wa-call-heard" id="waCallUserHeard">Speak naturally or tap a quick voice question below…</div>
+            <div class="wa-call-spoken" id="waCallBotSpoken">“Hello! Welcome to GearForge…”</div>
+          </div>
+
+          <!-- Live Recommended Product Card during Voice Call -->
+          <div class="wa-call-spotlight" id="waCallSpotlight" hidden></div>
+
+          <!-- Quick Voice Prompts (For noisy rooms or 1-tap voice testing) -->
+          <div class="wa-call-quick-prompts">
+            <button type="button" class="wa-call-prompt-chip" data-voice-ask="What is the best gaming mouse under 3000?">🗣️ “Best gaming mouse under ₹3,000”</button>
+            <button type="button" class="wa-call-prompt-chip" data-voice-ask="Why should I choose this? What are its advantages and specifications?">🗣️ “Why should I choose this? (Specs &amp; Pros)”</button>
+            <button type="button" class="wa-call-prompt-chip" data-voice-ask="What is a fingertip mouse?">🗣️ “What is a fingertip mouse?”</button>
+            <button type="button" class="wa-call-prompt-chip" data-voice-ask="I play Valorant and CS2, what mousepad is best?">🗣️ “Valorant &amp; CS2 mousepad”</button>
+            <button type="button" class="wa-call-prompt-chip" data-voice-ask="Add it to my bag and apply discount code">🗣️ “Add to bag + 20% discount”</button>
+          </div>
+        </div>
+
+        <div class="wa-call-controls">
+          <button type="button" class="wa-call-ctrl-btn" id="waCallSpeakerBtn" title="Toggle Speaker Audio" aria-label="Toggle Speaker">
+            🔊
+            <small>Speaker</small>
+          </button>
+          <button type="button" class="wa-call-ctrl-btn wa-call-mic-btn" id="waCallMicBtn" title="Toggle Mic On/Off or Interrupt" aria-label="Toggle Microphone">
+            🎙️
+            <small id="waCallMicLabel">Mic ON</small>
+          </button>
+          <button type="button" class="wa-call-ctrl-btn wa-call-hangup-btn" id="waCallEndBtn" title="End Voice Call" aria-label="End Call">
+            📴
+            <small>End Call</small>
+          </button>
+        </div>
+      </div>
+
+      <div class="wa-messages" id="waMessages" role="log" aria-live="polite"></div>
+
+      <div class="wa-quick-bar" id="waQuickBar">
+        <button type="button" class="wa-chip" data-wa-prompt="Recommend the best gaming mouse">🖱️ Best Mouse</button>
+        <button type="button" class="wa-chip" data-wa-prompt="Build me a full setup under ₹6,000">⚡ Setup under ₹6K</button>
+        <button type="button" class="wa-chip" data-wa-prompt="Compare Pulse X and Phantom Pro mouse">⚖️ Compare Mice</button>
+        <button type="button" class="wa-chip" data-wa-prompt="Show mechanical keyboards">⌨️ Keyboards</button>
+        <button type="button" class="wa-chip" data-wa-prompt="Do you have any discount promo codes?">🏷️ Promo Codes</button>
+        <button type="button" class="wa-chip" data-wa-prompt="What is in my shopping bag right now?">🛍️ My Bag</button>
+        <button type="button" class="wa-chip" data-wa-prompt="What is your shipping and warranty policy?">🚚 Shipping &amp; Warranty</button>
+      </div>
+
+      <form class="wa-input-bar" id="waInputForm" autocomplete="off">
+        <button type="button" class="wa-voice-btn" id="waVoiceBtn" title="Speak your question" aria-label="Voice input">🎤</button>
+        <input type="text" id="waMessageInput" placeholder="Ask about prices, specs, setups, cart or orders…" aria-label="Type a message to ForgeBot AI">
+        <button type="submit" class="wa-send-btn" aria-label="Send message">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21 23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+        </button>
+      </form>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
